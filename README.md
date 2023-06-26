@@ -17,3 +17,12 @@ If you encounter any issues, have suggestions for improvement, or need assistanc
 TranslateNow is owned by Kalvium and developed by Jawahar lingam and Harish Boopathi. Take a look at our ***[License](LICENSE)***. We are committed to delivering high-quality translation tools to facilitate effective communication across languages and cultures.
 
 Thank you for choosing TranslateNow! We hope it simplifies your translation needs and enhances your multilingual experiences.
+
+## Tech-stack
+
+- MERN stack
+- AWS
+
+## Command to run the file
+
+**npm run dev**
