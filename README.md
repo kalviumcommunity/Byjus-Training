@@ -14,7 +14,7 @@ If you encounter any issues, have suggestions for improvement, or need assistanc
 
 ## About
 
-TranslateNow is owned by Kalvium and developed by Jawahar lingam and Harish Boopathi. Take a look at our ***[License](LICENSE)***. We are committed to delivering high-quality translation tools to facilitate effective communication across languages and cultures.
+TranslateNow is owned by Kalvium and developed by ***[Jawahar Lingam](https://github.com/jawahar-lee03)*** and ***[Harish Boopathi](https://github.com/harish08102004)***. Take a look at our ***[License](LICENSE)***. We are committed to delivering high-quality translation tools to facilitate effective communication across languages and cultures.
 
 Thank you for choosing TranslateNow! We hope it simplifies your translation needs and enhances your multilingual experiences.
 
@@ -23,6 +23,14 @@ Thank you for choosing TranslateNow! We hope it simplifies your translation need
 - MERN stack
 - AWS
 
-## Command to run the file
+## Getting Started
 
-**npm run dev**
+This repository contains the source code for ***[TranslateNow](https://github.com/kalviumcommunity/Byjus-Training)***. Follow the steps below to fork and work on this repository.
+
+1. Click the Fork button to create a copy of the repository under your GitHub account.
+2. Clone the repository to your local machine using the provided link.
+   - **Command to run App:** ***[npm run dev](https://stackoverflow.com/questions/64397005/what-are-npm-run-dev-and-npm-run-prod)***
+4. Create a new branch, make changes to the code, and commit your work.
+5. Push your changes to your forked repository.
+6. Create a pull request to propose your changes to the original repository.
+7. Keep your forked repository up to date by fetching and merging changes from the original repository.
