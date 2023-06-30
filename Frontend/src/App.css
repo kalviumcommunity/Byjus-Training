@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Alconica';
+  src: url('../public/fonts/Aclonica-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aldrich';
+  src: url('../public/fonts/Aldrich-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-link {
+  cursor: pointer;
+}
