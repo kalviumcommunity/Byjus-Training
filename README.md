@@ -20,7 +20,8 @@ Thank you for choosing TranslateNow! We hope it simplifies your translation need
 
 ## Tech-stack
 
-- MERN stack
+- ReactJS
+- NodeJS
 - AWS
 
 ## Getting Started
