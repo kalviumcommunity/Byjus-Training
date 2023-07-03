@@ -2,8 +2,6 @@ import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import backgroundImage from "../assets/Background-img.png";
 import externalLinkIcon from "../assets/ExternalLink.png"
-import "../App.css";
-
 
 function Home() {
   
