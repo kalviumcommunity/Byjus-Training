@@ -1,22 +1,58 @@
-import './App.css'
-import { BrowserRouter as Router,Routes,Route} from "react-router-dom";
-import Home from './components/Home';
-import SignUp from './components/SignUp';
-import SignIn from './components/SignIn';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import SignUp from "./components/SignUp";
+import SignIn from "./components/SignIn";
+import backgroundImage from "./assets/Background-img.png";
+import { Box } from "@chakra-ui/react";
+import "./App.css";
+
 
 function App() {
-
   return (
     <>
+      <Box
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          zIndex: -1,
+        }}
+      >
+        <Box
+          position="absolute"
+          top={0}
+          left={0}
+          width="100%"
+          height="100%"
+          backgroundColor="black"
+          opacity={0.7}
+        />
+        <Box
+          style={{
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: -1,
+          }}
+        />
+      </Box>
       <Router>
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
-          <Route path="/signUp" element={<SignUp/>}></Route>
-          <Route path="/signIn" element={<SignIn/>}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/signIn" element={<SignIn />} />
         </Routes>
       </Router>
     </>
   );
 }
 
-export default App
+export default App;

@@ -1,6 +1,8 @@
+import { Box } from "@chakra-ui/react"
+import NavBar from "./NavBar"
 function SignIn() {
   return (
-    <div>SignIn</div>
+    <Box ><NavBar/></Box>
   )
 }
 

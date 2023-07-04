@@ -1,33 +1,13 @@
-import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import backgroundImage from "../assets/Background-img.png";
 import externalLinkIcon from "../assets/ExternalLink.png"
+import NavBar from "./NavBar";
 
 function Home() {
-  
   return (
     <>
       <Box width="100%" height="100%" overflow="hidden">
-        <Image
-          src={backgroundImage}
-          alt="Background"
-          objectFit="cover"
-          position="absolute"
-          top={0}
-          left={0}
-          width="100%"
-          height="100%"
-          zIndex={-1}
-        />
-        <Box
-          position="absolute"
-          top={0}
-          left={0}
-          width="100%"
-          height="100%"
-          backgroundColor="black"
-          opacity={0.7}
-        >
+       
           {" "}
           <Flex
             direction="row"
@@ -35,26 +15,7 @@ function Home() {
             width="100%"
             justifyContent="space-between"
           >
-            <Flex direction="column" paddingLeft="80px" alignItems="center">
-              <Heading
-                size="lg"
-                marginBottom={0}
-                fontSize="32px"
-                fontFamily="Alconica"
-                color="white"
-              >
-                TranslateNow
-              </Heading>
-              <Text
-                fontSize="10px"
-                marginTop={0}
-                fontWeight="light"
-                color="white"
-                fontFamily="Aldrich"
-              >
-                Breaking Barriers, Connecting People!
-              </Text>
-            </Flex>
+           <NavBar/>
             <Flex
               direction="row"
               fontSize="18px"
@@ -116,7 +77,7 @@ function Home() {
             </Box>
           </Box>
         </Box>
-      </Box>
+
     </>
   );
 }
