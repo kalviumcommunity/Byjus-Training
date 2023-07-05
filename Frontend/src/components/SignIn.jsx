@@ -225,7 +225,7 @@ function SignIn() {
                                     backgroundColor="#4A4A4A"
                                 ></Box>
                             </Flex>
-                            {<GoogleButton />}
+                            <GoogleButton />
                             <Box color="#4A4A4A" className="x-small">
                                 {"Don't have an account?"}
                                 <a href="./signUp">
