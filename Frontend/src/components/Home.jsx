@@ -66,18 +66,107 @@ function Home() {
                   fontWeight="bold"
                   border="none"
                 >
-                  Get Started
-                  <span>
-                    <Image src={externalLinkIcon} ml="10px" w="21px" h="21px" />
-                  </span>
-                </Button>
-              </Link>
+                    <Flex
+                        direction="column"
+                        paddingLeft="80px"
+                        alignItems="center"
+                    >
+                        <Heading
+                            size="lg"
+                            marginBottom={0}
+                            fontSize="32px"
+                            fontFamily="Alconica"
+                            color="white"
+                        >
+                            TranslateNow
+                        </Heading>
+                        <Text
+                            fontSize="10px"
+                            marginTop={0}
+                            fontWeight="light"
+                            color="white"
+                            fontFamily="Aldrich"
+                        >
+                            Breaking Barriers, Connecting People!
+                        </Text>
+                    </Flex>
+                    <Flex
+                        direction="row"
+                        fontSize="18px"
+                        paddingRight="80px"
+                        gap="40px"
+                        alignItems="center"
+                    >
+                        <Link
+                            to="/signIn"
+                            style={{
+                                textDecoration: "none",
+                                color: "white",
+                            }}
+                        >
+                            <Text fontFamily="Aldrich">Log In</Text>
+                        </Link>
+                        <Link
+                            to="/signUp"
+                            style={{
+                                textDecoration: "none",
+                                color: "white",
+                            }}
+                        >
+                            <Text fontFamily="Aldrich">Register</Text>
+                        </Link>
+                    </Flex>
+                </Flex>
+                <Flex
+                    alignItems="center"
+                    justifyContent="center"
+                    flexDirection="column"
+                    pt="150px"
+                >
+                    <Text
+                        color="white"
+                        fontSize="40px"
+                        maxWidth="1048px"
+                        textAlign="center"
+                    >
+                        Break language barriers effortlessly. Connect with
+                        ease through our translating app.
+                    </Text>
+                    <Box>
+                        <Link className="custom-link" to="/signUp">
+                            <Button
+                                w="200px"
+                                h="52px"
+                                margin="32px"
+                                fontSize="20px"
+                                fontWeight="bold"
+                                borderRadius="4px"
+                                border="none"
+                                _hover={{
+                                    cursor: "pointer",
+                                    transform:"translateY(1px) translateX(-1px)"
+                                }}
+                            >
+                                Get Started
+                                <span>
+                                    <Image
+                                        src={externalLinkIcon}
+                                        ml="10px"
+                                        w="21px"
+                                        h="21px"
+                                    />
+                                </span>
+                            </Button>
+                        </Link>
+                    </Box>
+                </Flex>
             </Box>
           </Box>
         </Box>
 
     </>
   );
+
 }
 
 export default Home;
