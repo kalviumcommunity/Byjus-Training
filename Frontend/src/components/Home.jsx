@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text, Heading } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import externalLinkIcon from "../assets/ExternalLink.png"
 import NavBar from "./NavBar";
@@ -58,7 +58,7 @@ function Home() {
               <Link
                 className="custom-link"
                 to="/register"
-              >
+              />
                 <Button
                   w="200px"
                   h="52px"
@@ -116,7 +116,7 @@ function Home() {
                             <Text fontFamily="Aldrich">Register</Text>
                         </Link>
                     </Flex>
-                </Flex>
+                </Button>
                 <Flex
                     alignItems="center"
                     justifyContent="center"
