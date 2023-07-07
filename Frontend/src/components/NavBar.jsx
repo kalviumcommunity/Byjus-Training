@@ -2,7 +2,7 @@ import { Flex,Text,Heading ,Box } from "@chakra-ui/react";
 
 function NavBar() {
   return (
-    <Flex direction="column" paddingLeft="80px">
+    <Flex direction="column" paddingLeft="80px" pt="40px">
       <Box alignItems="center">
         <Heading
           size="lg"
@@ -10,6 +10,7 @@ function NavBar() {
           fontSize="32px"
           fontFamily="Aclonica"
           color="white"
+          
         >
           TranslateNow
         </Heading>
