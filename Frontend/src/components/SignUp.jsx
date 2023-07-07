@@ -305,7 +305,7 @@ function SignUp() {
                                                     "translateY(1px) translateX(-1px)",
                                             }}
                                         >
-                                            Sign up
+                                            SignUp
                                         </Button>
                                     </Flex>
                                 </Form>

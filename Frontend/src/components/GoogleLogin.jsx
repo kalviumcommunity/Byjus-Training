@@ -1,16 +1,34 @@
-import { Flex, Text, Image } from "@chakra-ui/react"
-import googleLogo from "../assets/GoogleLogo.png"
+import { Flex, Text, Image } from "@chakra-ui/react";
+import googleLogo from "../assets/GoogleLogo.png";
+import { useGoogleLogin } from "@react-oauth/google";
 
 export const GoogleButton = () => {
-
-    function handleLogin() {
-        // Google OAuth Login setup
-    }
+    const handleLogin = useGoogleLogin({
+        onSuccess: (res) => {
+            fetch("https://www.googleapis.com/oauth2/v2/userinfo", {
+                headers: {
+                    Authorization: `Bearer ${res.access_token}`,
+                },
+            })
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error("Failed to retrieve user details.");
+                    }
+                    return response.json();
+                })
+                .then((userData) => {
+                    console.log(userData);
+                })
+                .catch((error) => {
+                    console.error(error);
+                });
+        },
+    });
 
     return (
         <Flex
             onClick={() => {
-                handleLogin()
+                handleLogin();
             }}
             alignItems="center"
             justifyContent="space-between"
@@ -44,4 +62,4 @@ export const GoogleButton = () => {
             </Text>
         </Flex>
     );
-}
+};

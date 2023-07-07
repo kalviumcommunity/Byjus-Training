@@ -1,4 +1,5 @@
-import { Box, Button, Flex, Image, Text,  } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+
 import { Link } from "react-router-dom";
 import externalLinkIcon from "../assets/ExternalLink.png";
 
