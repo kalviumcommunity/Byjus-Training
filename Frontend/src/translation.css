@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.textArea {
+    width: calc(100% - 24px);
+    height: calc(100% - 72px);
+    border: 0px;
+    padding: 0px 12px;
+    border-radius: 8px;
+    background-color: azure;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #434343;
+}
+
+.textArea:focus {
+    outline: 0px !important;
+}

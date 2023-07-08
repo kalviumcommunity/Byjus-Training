@@ -12,6 +12,12 @@ const OutputLanguage = () => {
     // Store the selected language code in localStorage
     localStorage.setItem(
       "selectedOutputLanguage",
+      selectedLanguage ? selectedLanguage.name : ""
+    );
+
+    // Store the selected language code in localStorage
+    localStorage.setItem(
+      "selectedOutputCode",
       selectedLanguage ? selectedLanguage.code : ""
     );
   };

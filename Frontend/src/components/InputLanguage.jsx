@@ -11,7 +11,13 @@ const InputLanguage = () => {
 
     // Store the selected language code in localStorage
     localStorage.setItem(
-      "selectedLanguage",
+      "selectedInputLanguage",
+      selectedLanguage ? selectedLanguage.name : ""
+    );
+
+    // Store the selected language code in localStorage
+    localStorage.setItem(
+      "selectedInputCode",
       selectedLanguage ? selectedLanguage.code : ""
     );
   };
