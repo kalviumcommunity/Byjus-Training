@@ -8,6 +8,7 @@ import "./App.css";
 import InputLanguage from "./components/InputLanguage";
 import OutputLanguage from "./components/OutputLanguage";
 import Translation from "./components/Translation";
+import NotFound from "./components/NotFound";
 
 
 function App() {
@@ -52,9 +53,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/signIn" element={<SignIn />} />
-          <Route path="/inputLanguage" element={<InputLanguage/>} />
-          <Route path="/outputLanguage" element={<OutputLanguage/>} />
-          <Route path="/translation" element={<Translation/>} />
+          <Route path="/inputLanguage" element={<InputLanguage />} />
+          <Route path="/outputLanguage" element={<OutputLanguage />} />
+          <Route path="/translation" element={<Translation />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </Router>
     </>
