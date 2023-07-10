@@ -17,12 +17,28 @@ export const GoogleButton = () => {
                     return response.json();
                 })
                 .then((userData) => {
-                    console.log(userData);
+                    localStorage.setItem(
+                        "userName",
+                        userData ? userData.name : ""
+                    );
+                    localStorage.setItem(
+                        "userEmail",
+                        userData ? userData.email : ""
+                    );
+                    localStorage.setItem(
+                        "userImg",
+                        userData ? userData.picture : ""
+                    );
+
+                    setTimeout(() => {
+                        const redirect_uri = "http://localhost:5173/inputLanguage";
+                        window.location.href = redirect_uri;
+                    }, 3000)
                 })
                 .catch((error) => {
                     console.error(error);
                 });
-        },
+        }
     });
 
     return (
