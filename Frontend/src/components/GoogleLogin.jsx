@@ -2,7 +2,13 @@ import { Flex, Text, Image } from "@chakra-ui/react";
 import googleLogo from "../assets/GoogleLogo.png";
 import { useGoogleLogin } from "@react-oauth/google";
 
+
+
+const REDIRECT_URI = import.meta.env.VITE_REDIRECT_URI
+
 export const GoogleButton = () => {
+
+
     const handleLogin = useGoogleLogin({
         onSuccess: (res) => {
             fetch("https://www.googleapis.com/oauth2/v2/userinfo", {
@@ -31,7 +37,7 @@ export const GoogleButton = () => {
                     );
 
                     setTimeout(() => {
-                        const redirect_uri = "http://localhost:5173/inputLanguage";
+                        const redirect_uri = REDIRECT_URI;
                         window.location.href = redirect_uri;
                     }, 3000)
                 })
